@@ -1,0 +1,20 @@
+{
+  "AskAction": "Are you sure you want to do this?",
+  "Cancel": "Cancel",
+  "Create": "Create",
+  "CreateNewItem": "Create new item",
+  "Yes": "Yes",
+  "Update": "Update",
+  "Watch": "Watch",
+  "Order": "Order",
+  "Client": "Client",
+  "DeleteOrder": "Delete",
+  "CancelOrder": "Canceled",
+  "ProcessOrder": "Processed",
+  "DoneOrder": "Done",
+  "OrderTableName": "Name",
+  "OrderTablePrice": "Price",
+  "OrderTableQty": "Qty",
+  "OrderTableTotal": "Total",
+  "OrderProdsList": "Products list"
+}

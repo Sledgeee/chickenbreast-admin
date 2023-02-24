@@ -1,0 +1,21 @@
+{
+  "GoToHome": "Go to Home",
+  "LinkIncorrect": "Your link seems to be incorrect",
+  "Login": "Login",
+  "LoginError": "Login error",
+  "LoginSuccessful": "Login successful",
+  "Logout": "Logout",
+  "MagicLogin": "Magic Login",
+  "PageNotFound": "Sorry, page not found!",
+  "PageNotFoundDescription": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL?",
+  "SignIn": "Sign In",
+  "SignInTo": "Sign in to panel",
+  "SignInToDescription": "Enter your username specified during registration in the bot",
+  "WelcomeBack": "Welcome Back! \uD83D\uDC4B",
+  "WillRedirect": "You will be redirected in 3 seconds...",
+  "Tasks": "Tasks",
+  "Example": "Example",
+  "BotSentMessage": "The bot sent you a private Telegram OTP message to confirm your login to the panel",
+  "BotWarn": "If you don't receive the notification, try refreshing the page and trying again",
+  "CheckOTP": "Check OTP"
+}

@@ -1,0 +1,20 @@
+{
+  "AskAction": "Ви впевнені, що хочете це зробити?",
+  "Cancel": "Скасувати",
+  "Create": "Створити",
+  "CreateNewItem": "Створення нового елементу",
+  "Yes": "Так",
+  "Update": "Оновити",
+  "Watch": "Переглянути",
+  "Order": "Замовлення",
+  "Client": "Клієнт",
+  "DeleteOrder": "Видалити",
+  "CancelOrder": "Скасоване",
+  "ProcessOrder": "Оброблене",
+  "DoneOrder": "Виконане",
+  "OrderTableName": "Назва",
+  "OrderTablePrice": "Ціна",
+  "OrderTableQty": "Кількість",
+  "OrderTableTotal": "Загалом",
+  "OrderProdsList": "Список товарів"
+}
