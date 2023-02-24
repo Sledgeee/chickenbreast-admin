@@ -25,7 +25,7 @@ export default function Page404() {
 	return (
 		<>
 			<Helmet>
-				<title> 404 | KI2 Helper </title>
+				<title> 404 | {t('Chickenbreast')} </title>
 			</Helmet>
 
 			<Container>

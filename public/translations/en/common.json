@@ -17,5 +17,6 @@
   "Example": "Example",
   "BotSentMessage": "The bot sent you a private Telegram OTP message to confirm your login to the panel",
   "BotWarn": "If you don't receive the notification, try refreshing the page and trying again",
-  "CheckOTP": "Check OTP"
+  "CheckOTP": "Check OTP",
+  "Chickenbreast": "Chickenbreast"
 }

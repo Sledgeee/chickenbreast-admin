@@ -59,7 +59,10 @@ export default function MagicLoginPage() {
 	return (
 		<>
 			<Helmet>
-				<title> {t('MagicLogin')} | KI2 Helper </title>
+				<title>
+					{' '}
+					{t('MagicLogin')} | {t('Chickenbreast')}{' '}
+				</title>
 			</Helmet>
 
 			<Container>

@@ -48,7 +48,10 @@ export default function LoginPage() {
 	return (
 		<>
 			<Helmet>
-				<title> {t('Login')} | Чікенбрест </title>
+				<title>
+					{' '}
+					{t('Login')} | {t('Chickenbreast')}{' '}
+				</title>
 			</Helmet>
 
 			<Stack sx={{ position: 'fixed', right: 0, m: { xs: 2, sm: 3, md: 4 } }}>

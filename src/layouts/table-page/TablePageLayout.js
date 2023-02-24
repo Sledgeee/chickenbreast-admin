@@ -63,7 +63,7 @@ export default function TablePageLayout({
 	const [fetchError, setFetchError] = useState(false)
 	const [obj, setObj] = useState({})
 
-	const { t } = useTranslation('table')
+	const { t } = useTranslation(['table', 'common'])
 
 	useEffect(() => {
 		;(async () => {
@@ -200,7 +200,10 @@ export default function TablePageLayout({
 	return (
 		<>
 			<Helmet>
-				<title> {title} | Чікенбрест </title>
+				<title>
+					{' '}
+					{title} | {t('Chickenbreast', { ns: 'common' })}{' '}
+				</title>
 			</Helmet>
 
 			<Container>
