@@ -1,9 +1,9 @@
 import ky from 'ky'
 
-const URL = 'https://chickenapi-1-r8060741.deta.app'
+export const API_URL = 'https://chickenapi-1-r8060741.deta.app'
 
 export const $ky = ky.create({
-	prefixUrl: URL,
+	prefixUrl: API_URL,
 	credentials: 'include',
 	mode: 'cors'
 })

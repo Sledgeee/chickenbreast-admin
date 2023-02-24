@@ -17,6 +17,7 @@ import { API_ENDPOINTS, ApiService } from '../services/apiService'
 import { TablePageLayout } from '../layouts/table-page'
 import Iconify from '../components/iconify'
 import { ConfirmDialog } from '../components/confirm-dialog'
+import { API_URL } from '../features/api'
 
 function descendingComparator(a, b, orderBy) {
 	if (b[orderBy] > a[orderBy]) {
@@ -230,10 +231,7 @@ const WatchOrderDialog = ({ order, isOpen, setIsOpen, setRefreshTable }) => {
 						{orderItems?.map((value, index) => (
 							<tr key={index}>
 								<td>
-									<img
-										src={`http://localhost:8000${value.product.image}`}
-										alt={index}
-									/>
+									<img src={`${API_URL}${value.product.image}`} alt={index} />
 								</td>
 								<td>{value.product.name}</td>
 								<td>{value.product.price}₴</td>
