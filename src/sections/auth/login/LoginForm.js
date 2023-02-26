@@ -54,22 +54,28 @@ export default function LoginForm() {
 	}
 
 	const handleCheckOtpClick = async () => {
+		setErrored(false)
 		if (!otp) {
 			setErrored(true)
 			return
 		}
 		setConfirmLoginVisibility(false)
 		setIsLoading(true)
-		const { success, admin, tokens } = await AuthService.checkOtp(
-			attemptId,
-			otp
-		)
-		const { accessToken } = tokens
-		if (success) {
-			localStorage.setItem('user', JSON.stringify(admin))
-			localStorage.setItem('token', accessToken)
-			navigate('/', { replace: true })
-		} else {
+		try {
+			const { success, admin, tokens } = await AuthService.checkOtp(
+				attemptId,
+				otp
+			)
+			const { accessToken } = tokens
+			if (success) {
+				localStorage.setItem('user', JSON.stringify(admin))
+				localStorage.setItem('token', accessToken)
+				navigate('/', { replace: true })
+			} else {
+				setErrored(true)
+			}
+		} catch (e) {
+			setConfirmLoginVisibility(true)
 			setErrored(true)
 		}
 		setIsLoading(false)
