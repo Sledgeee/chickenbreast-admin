@@ -32,17 +32,23 @@ export default function LoginForm() {
 	}
 
 	const handleLoginClick = async () => {
+		setErrored(false)
 		if (!username) {
 			setErrored(true)
 			return
 		}
 		setLoginFormVisibility(false)
 		setIsLoading(true)
-		const response = await AuthService.tryLogin(username)
-		if (response.accepted === true) {
-			const { attemptId } = response
-			setAttemptId(attemptId)
-			setConfirmLoginVisibility(true)
+		try {
+			const response = await AuthService.tryLogin(username)
+			if (response.accepted === true) {
+				const { attemptId } = response
+				setAttemptId(attemptId)
+				setConfirmLoginVisibility(true)
+			}
+		} catch (e) {
+			setLoginFormVisibility(true)
+			setErrored(true)
 		}
 		setIsLoading(false)
 	}
