@@ -19,6 +19,8 @@ export const $api = $ky.extend({
 		afterResponse: [
 			async (request, options, response) => {
 				if (response.status === 401) {
+					localStorage.removeItem('user')
+					localStorage.removeItem('token')
 					const response = await $ky.get(`auth/refresh`)
 					if (response.status === 200) {
 						const { accessToken, admin } = await response.json()
